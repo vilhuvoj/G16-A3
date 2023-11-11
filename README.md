@@ -53,5 +53,7 @@ The use case described can be a crucial component of larger, more comprehensive 
 
 - **Environmental Impact Reporting:** In ongoing projects, regular LCA assessments can help in monitoring and reporting the evolving environmental impact and sustainability performance.
 
-
+## Script explanation on an IDM diagram
+![IDM diagram]
+<img src=" img/diagram.svg ">
 
