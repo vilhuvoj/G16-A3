@@ -54,4 +54,4 @@ The use case described can be a crucial component of larger, more comprehensive 
 - **Environmental Impact Reporting:** In ongoing projects, regular LCA assessments can help in monitoring and reporting the evolving environmental impact and sustainability performance.
 
 
-![diagram4](https://github.com/vilhuvoj/G6-A3/assets/150557585/33b90311-909e-490b-a932-a6dc45c8b8dd)
+
