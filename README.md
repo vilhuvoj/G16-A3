@@ -3,6 +3,7 @@ Group 16
 ## Description of the use case
 
 The code begins by methodically scrutinizing the building model, where it categorizes materials into distinct categories, such as "Slabs" and "Walls," and proceeds to calculate their respective volumes. Following this, the code enhances the IFC model by incorporating material densities and corresponding CO2-equivalents per kilogram of material, sourced from a preexisting database stored in a Microsoft Excel file. Subsequently, the script computes the total weights of all elements and further derives CO2-equivalents for each element. These computed results are methodically structured, documented, and stored in an Excel file. This serves as a pivotal resource for conducting in-depth LCA analyses, allowing for a thorough assessment of the project's environmental impact and sustainability, with a primary focus on material utilization.
+> Note: A more in-depth description will follow in the Assignment 5 - Reflection.
 
 ## Business value of the tool
 - **Efficiency and Time Savings:** The tool streamlines the process of extracting material and environmental data from the BIM model, automating what would otherwise be a time-consuming and error-prone task. This increased efficiency can save significant time and resources for your company.
@@ -20,7 +21,6 @@ To successfully solve the use case, following non-BIM disciplines and areas of e
 - **Life Cycle Assessment (LCA)**
 - **Programming (Python)**
 - **Data Analysis and Processing**
-
 
 ## IFC concepts used
 The code provided in the script utilizes various IFC concepts to interact with and extract information from the BIM model. These IFC concepts include:
@@ -63,5 +63,5 @@ The use case described can be a crucial component of larger, more comprehensive 
 
 - **Environmental Impact Reporting:** In ongoing projects, regular LCA assessments can help in monitoring and reporting the evolving environmental impact and sustainability performance.
 
-## Script explanation on an IDM diagram
+## Script overview on an IDM diagram
 ![diagram](https://github.com/vilhuvoj/G6-A3/assets/150557585/0fdac90f-62f4-490d-9b91-f27b44153760)
