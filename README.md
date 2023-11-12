@@ -65,3 +65,5 @@ The use case described can be a crucial component of larger, more comprehensive 
 
 ## Script overview on an IDM diagram
 ![diagram](https://github.com/vilhuvoj/G6-A3/assets/150557585/0fdac90f-62f4-490d-9b91-f27b44153760)
+
+> Note: If the diagram is not readable, you can find it as .svg file in `img` folder.
