@@ -1,6 +1,10 @@
 
 from pathlib import Path
 import ifcopenshell
+import ifcopenshell.util.element
+import ifcopenshell.api
+import openpyxl
+from openpyxl import load_workbook
 
 modelname = "G16_Skylab_Model"
 
@@ -16,16 +20,10 @@ except OSError:
     except OSError:
         print(f"ERROR: please check your model folder : {model_url} does not exist")
 
-# Your script goes here
-import ifcopenshell.util.element
-import ifcopenshell.api
-import openpyxl
-
 # Open the Excel file
 wb = openpyxl.Workbook()
 
 #Load excel with densities:
-from openpyxl import load_workbook
 excel_densities = load_workbook("List_of_densities.xlsx")
 sheet_densities = excel_densities['Sheet1']
 ecoinvent = excel_densities['Ecoinvent']
@@ -155,12 +153,6 @@ for Slab in model.by_type("IfcSlab"):
         ifcopenshell.api.run("pset.edit_pset", model, pset=pset, properties={"Material": material[0] , "Volume": psets['GrossVolume'], "Density": slab_material_densities[index], "Weight": weight,"Ecoinvent process" : index5, "IPCC2021 Global Warming": index2})
     except TypeError:
         print("TypeError")
-    
-
-
-
-
-
 
 # Calculate wall volumes/names
 wall_material_names =[]
@@ -204,7 +196,7 @@ for i in range(len(wall_material_names)):
     except TypeError:
         wall_material_weight.append("Weight cannot be calculated")
 
-#Total wall emissions are calculated (Not working)
+#Total wall emissions are calculated
 wall_emission = [0] * len(wall_material_names)
 wall_total_emissions = []
 wall_emission_unit = [0] * len(wall_material_names)
@@ -323,6 +315,6 @@ for wall_material_names, wall_material_volumes, wall_material_densities, wall_ma
 
 # Save the Excel file
 wb.save('material_quantities.xlsx')
-model.write(r'C:\Users\Vojta\Desktop\BIM')
+model.write(r'C:\Users\madsf\OneDrive\Skrivebord\Advanced BIM\Model/G16_Skylab_Modified.ifc')
 
 print("Operation Complete")
